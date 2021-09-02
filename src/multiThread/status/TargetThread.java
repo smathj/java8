@@ -7,7 +7,7 @@ public class TargetThread extends Thread {
 	@Override
 	public void run() {
 		
-		for(long i=0; i<1000000000; i++) {}
+		for(long i=0; i<100000000; i++) {}
 		
 		
 		try {
@@ -19,7 +19,7 @@ public class TargetThread extends Thread {
 		}
 		
 		
-		for(long i=0; i<1000000000; i++) {}
+		for(long i=0; i<100000000; i++) {}
 		
 		
 		

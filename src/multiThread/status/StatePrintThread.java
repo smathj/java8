@@ -5,6 +5,7 @@ public class StatePrintThread extends Thread {
 	private Thread targetThrad;
 	
 	
+	// 생성자
 	public StatePrintThread(Thread targetThread) {
 		this.targetThrad = targetThread;
 	}
@@ -21,7 +22,7 @@ public class StatePrintThread extends Thread {
 			if(state == Thread.State.NEW) {
 				
 				// 실행 대기 상태로 만든다
-				targetThrad.start();
+				targetThrad.start();	// for문 돌린다
 			}
 			
 			// 스레드 실행을 마쳣다면
